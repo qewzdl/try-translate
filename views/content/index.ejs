@@ -1,0 +1,24 @@
+<%- include('../header.ejs') %>
+
+<div class="language-choice">
+    <div class="language-choice__language-label" id="current-language"></div>
+
+    <div class="language-choice__echange-button" id="exhange-languages-button">
+        <%- include('../svg/icon-swap.ejs') %>
+    </div>
+    
+    <div class="language-choice__language-label" id="target-language"></div>
+</div>
+
+<div class="instructions">
+    <h2 class="instructions__title">Translate words as fast as you can.</h2>
+    <p class="instructions__tip">Press <span class="instructions__start-key">Enter</span> to start.</p>
+</div>
+
+<div class="start-timer">
+    <div class="start-timer__count"></div>
+</div>
+
+<%- include('../components/train-box.ejs') %>
+
+<%- include('../footer.ejs') %>

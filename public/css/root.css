@@ -1,0 +1,9 @@
+:root {
+    --color-border: #404040;
+
+    --color-background-loading: #1f1f1f;
+    --color-background: #121212;
+    --color-background-secondary: #000000;
+    --color-text: #ffffff;
+    --color-text-secondary: #aaaaaa;
+}

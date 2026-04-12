@@ -1,0 +1,55 @@
+<div class="train-box">
+    <div class="child-content">    
+        <div class="train-box__base">
+            <input type="text" class="train-box__input">
+            <div class="train-box__divider"></div>
+            <input type="text" class="train-box__word" value="" readonly>
+        </div>
+
+        <ul class="train-box__translations">
+            <div class="train-box__translations-label">Translation variants:</div>
+            <ul class="train-box__translations-list"></ul>
+        </ul>
+
+        <div class="train-box__stats">
+            <p class="train-box__timer"></p>
+            <div class="train-box__score">
+                <div class="train-box__score-item train-box__score-item--correct">
+                    <div class="train-box__score-icon">
+                        <%- include('../svg/icon-correct') %>
+                    </div>
+                    <div class="train-box__score-count" id="positive-score"></div>
+                </div>
+                <div class="train-box__score-item train-box__score-item--wrong">
+                    <div class="train-box__score-icon">
+                        <%- include('../svg/icon-wrong') %>
+                    </div>
+                    <div class="train-box__score-count" id="negative-score"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="train-box__tips">
+            <div class="train-box__tips-item">
+                <div class="train-box__tips-icon">
+                    <%- include('../svg/icon-keyboard-escape') %>
+                </div>
+                <div class="train-box__tips-text">Press ESC to finish.</div>
+            </div>
+
+            <div class="train-box__tips-item">
+                <div class="train-box__tips-icon">
+                    <%- include('../svg/icon-keyboard-enter') %>
+                </div>
+                <div class="train-box__tips-text">Press Enter to check answer.</div>
+            </div>
+
+            <div class="train-box__tips-item">
+                <div class="train-box__tips-icon">
+                    <%- include('../svg/icon-keyboard-enter') %>
+                </div>
+                <div class="train-box__tips-text">Press Enter to continue.</div>
+            </div>
+        </div>
+    </div>
+</div>
