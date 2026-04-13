@@ -19,7 +19,7 @@ cd try-translate
 npm install
 ```
 
-### 3. Create .env file
+### 3. Create ```.env``` file
 
 Example:
 ```bash
@@ -33,4 +33,23 @@ LIBRETRANSLATE_URL=http://localhost:5000
 
 ```bash
 node index.js
+```
+
+# LibreTranslate
+
+This repository also includes a Dockerfile for running a local LibreTranslate service.
+
+It can be used to prepare a translation service for the ```ru -> en``` and ```en -> ru``` language pair.
+
+Typical workflow:
+
+```bash
+docker build -t try-translate-libre .
+docker run -p 5000:5000 try-translate-libre
+```
+
+Then make sure your ```.env``` file contains:
+
+```bash
+LIBRETRANSLATE_URL=http://localhost:5000
 ```
